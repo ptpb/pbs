@@ -1,3 +1,6 @@
 [submodule "bootstrap"]
 	path = bootstrap
 	url = https://github.com/twbs/bootstrap.git
+[submodule "jasny"]
+	path = jasny
+	url = https://github.com/jasny/bootstrap.git
