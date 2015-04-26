@@ -1,6 +1,6 @@
-[submodule "bootstrap"]
-	path = bootstrap
+[submodule "src/bootstrap"]
+	path = src/bootstrap
 	url = https://github.com/twbs/bootstrap.git
-[submodule "jasny"]
-	path = jasny
+[submodule "src/jasny"]
+	path = src/jasny
 	url = https://github.com/jasny/bootstrap.git

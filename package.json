@@ -1,0 +1,15 @@
+{
+    "name": "pbs",
+    "description": "pb styles",
+    "license": "GPLv3",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ptpb/pbs.git"
+    },
+    "devDependencies": {
+        "grunt": ">=0.4.5",
+        "grunt-contrib-less": ">=1.0.0",
+        "grunt-contrib-watch": ">=0.6.1",
+        "grunt-multiresize": ">=0.3.2"
+    }
+}
