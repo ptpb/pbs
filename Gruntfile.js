@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["css"],
+                    paths: ["node_modules/bootstrap/less"],
                     strictMath: true
                 },
                 files: {
