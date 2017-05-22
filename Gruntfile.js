@@ -30,12 +30,17 @@ module.exports = function(grunt) {
                 files: ['src/svg/*.svg'],
                 tasks: ['multiresize']
             }
+        },
+        curl: {
+            'dist/css/asciinema-player.css': 'https://github.com/asciinema/asciinema-player/releases/download/v2.0.0/asciinema-player.css',
+            'dist/js/asciinema-player.js': 'https://github.com/asciinema/asciinema-player/releases/download/v2.0.0/asciinema-player.js'
         }
     });
 
     grunt.loadNpmTasks('grunt-multiresize');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-curl');
 
-    grunt.registerTask('default', ['less', 'multiresize']);
+    grunt.registerTask('default', ['less', 'multiresize', 'curl']);
 }

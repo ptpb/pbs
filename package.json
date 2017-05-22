@@ -1,6 +1,6 @@
 {
     "name": "pbs",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "pb styles",
     "license": "GPLv3",
     "repository": {
@@ -12,6 +12,7 @@
         "grunt-contrib-less": ">=1.0.0",
         "grunt-contrib-watch": ">=0.6.1",
         "grunt-multiresize": ">=0.3.2",
-        "bootstrap": ">=3.3.4"
+        "bootstrap": ">=3.3.4",
+        "grunt-curl": ">=2.2.0"
     }
 }
