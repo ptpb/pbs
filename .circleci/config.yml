@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/build
+    docker:
+      - image: node:latest
+
+    steps:
+      - checkout
+      - restore_cache:
+          key: pbs-{{ .Branch }}-{{ checksum "package.json" }}
+
+      - run:
+          name: setup
+          command: |
+            apt-get update
+            apt-get install graphicsmagick
+            npm install -g grunt
+            npm install
+
+      - save_cache:
+          key: pbs-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+      - run:
+          name: build
+          command: |
+            grunt
